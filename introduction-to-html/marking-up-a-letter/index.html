@@ -34,21 +34,24 @@
         <link rel="stylesheet" href="./style.css">
     </head>
     <body>
-        <strong><abbr title="Doctor">Dr.</abbr> Eleanor Gaye</strong>
-        Awesome Science faculty
-        University of Awesome
-        Bobtown, <abbr title="California">CA</abbr> 99999,
-        <abbr title="United States of America">USA</abbr>
-        <strong>Tel: 123-456-7890</strong>
-        <strong>Email: no_reply@example.com</strong>
+        <address class="sender-column">
+            <strong><abbr title="Doctor">Dr.</abbr> Eleanor Gaye</strong><br>
+            Awesome Science faculty<br>
+            University of Awesome<br>
+            Bobtown, <abbr title="California">CA</abbr> 99999,<br>
+            <abbr title="United States of America">USA</abbr><br>
+            <strong>Tel: 123-456-7890</strong><br>
+            <strong>Email: no_reply@example.com</strong><br>
+        </address>
         
-        20 January 2016
+        <time datetime="2016-01-20">20 January 2016</time>
         
-        <strong><abbr title="Missus">Miss</abbr> Eileen Dover</strong>
-        4321 Cliff Top Edge
-        Dover, CT9 XXX
-        <abbr title="United Kingdom">UK</abbr>
-        
+        <address>
+            <strong><abbr title="Missus">Miss</abbr> Eileen Dover</strong><br>
+            4321 Cliff Top Edge<br>
+            Dover, CT9 XXX<br>
+            <abbr title="United Kingdom">UK</abbr><br>
+        </address>
         
         <h1><abbr title="Regarding">Re</abbr>: Eileen Dover university application</h1>
         
@@ -61,9 +64,9 @@
         We are happy to accommodate you starting your study with us at any time, however it would suit us better if you could start at the beginning of a semester; the start dates for each one are as follows:
 
         <ul>
-            <li>First semester: 9 September 2016</li>
-            <li>Second semester: 15 January 2017</li>
-            <li>Third semester: 2 May 2017</li>
+            <li>First semester: <time datetime="2016-09-09">9 September 2016</time></li>
+            <li>Second semester: <time datetime="2017-01-15">15 January 2017</time></li>
+            <li>Third semester: <time datetime="2017-05-02">2 May 2017</time></li>
         </ul>
         
         Please let me know if this is ok, and if so which start date you would prefer.
@@ -111,7 +114,6 @@
 
 Inline semantics
 
-    The four dates in the document should have appropriate elements containing machine-readable dates.
     The first address and first date in the letter should have a class attribute value of sender-column. The CSS you'll add later will cause these to be right aligned, as it should be in the case in a classic letter layout.
     The six sub/superscripts should be marked up appropriately — in the chemical formulae, and the numbers 103 and 104 (they should be 10 to the power of 3 and 4, respectively).
     Try to mark up at least two appropriate words in the text with strong importance/emphasis.
