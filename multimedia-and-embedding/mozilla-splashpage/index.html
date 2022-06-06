@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-US">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
@@ -107,7 +107,7 @@
     <main>
       <article>
         <!-- insert iframe from youtube -->
-        <iframe width="400" height="315" src="https://www.youtube.com/embed/ojcNcvb1olg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="400" height="315" src="https://www.youtube.com/embed/ojcNcvb1olg" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
         <h2>Rocking the free web</h2>
 
@@ -135,6 +135,11 @@
 
       <div class="red-panda">
         <!-- insert picture element -->
+        <picture>
+            <source media="(max-width: 599px)" srcset="./originals/red-panda_600.jpg">
+            <source media="(min-width: 600px)" srcset="./originals/red-panda_1200.jpg">
+            <img src="./originals/red-panda.jpg" alt="Red panda perched on tree trunk hugging branch">
+        </picture>
       </div>
 
     </main>
