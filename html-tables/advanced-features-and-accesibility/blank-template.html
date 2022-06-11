@@ -12,6 +12,8 @@
         <caption>Data about the planets of our solar system (Planetary facts taken from <a href="http://nssdc.gsfc.nasa.gov/planetary/factsheet/" target="_blank">Nasa's Planetary Fact Sheet - Metric</a>).</caption>
         <thead>
             <tr>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
                 <th id="name">Name</th>
                 <th id="mass">Mass (10<sup>24</sup>kg)</th>
                 <th id="diameter">Diameter (km)</th>
@@ -25,22 +27,65 @@
             </tr>
         </thead>
         <tbody>
-
+            <tr>
+              <th colspan="2" rowspan="4" id="terrestrial">Terrestrial Planets</th>
+              <th id="mercury" headers="terrestrial name">Mercury</th>
+              <td headers="terrestrial mercury mass">0.330</td>
+              <td headers="terrestrial mercury diameter">4,879</td>
+              <td headers="terrestrial mercury density">5427</td>
+              <td headers="terrestrial mercury gravity">3.7</td>
+              <td headers="terrestrial mercury length">4222.6</td>
+              <td headers="terrestrial mercury distance">57.9</td>
+              <td headers="terrestrial mercury temperature">167</td>
+              <td headers="terrestrial mercury moons">0</td>
+              <td headers="terrestrial mercury notes">Closest to the Sun</td>
+            </tr>
+            <tr>
+              <th id="venus" headers="terrestrial name">Venus</th>
+              <td headers="terrestrial venus mass">4.87</td>
+              <td headers="terrestrial venus diameter">12,104</td>
+              <td headers="terrestrial venus density">5243</td>
+              <td headers="terrestrial venus gravity">8.9</td>
+              <td headers="terrestrial venus length">2802.0</td>
+              <td headers="terrestrial venus distance">108.2</td>
+              <td headers="terrestrial venus temperature">464</td>
+              <td headers="terrestrial venus moons">0</td>
+              <td>&nbsp;</td>
+            </tr>
+            <tr>
+              <th id="earth" headers="terrestrial name">Earth</th>
+              <td headers="terrestrial earth mass">5.97</td>
+              <td headers="terrestrial earth diameter">12,756</td>
+              <td headers="terrestrial earth density">5514</td>
+              <td headers="terrestrial earth gravity">9.8</td>
+              <td headers="terrestrial earth length">24.0</td>
+              <td headers="terrestrial earth distance">149.6</td>
+              <td headers="terrestrial earth temperature">15</td>
+              <td headers="terrestrial earth moons">1</td>
+              <td headers="terrestrial earth notes">Our world</td>
+            </tr>
+            <tr>
+              <th id="mars" headers="terrestrial name">Mars</th>
+              <td headers="terrestrial mars mass">0.642</td>
+              <td headers="terrestrial mars diameter">6,792</td>
+              <td headers="terrestrial mars density">3933</td>
+              <td headers="terrestrial mars gravity">3.7</td>
+              <td headers="terrestrial mars length">24.7</td>
+              <td headers="terrestrial mars distance">227.9</td>
+              <td headers="terrestrial mars temperature">-65</td>
+              <td headers="terrestrial mars moons">2</td>
+              <td headers="terrestrial mars notes">The red planet</td>
+            </tr>
         </tbody>
     </table>
 
 <!--
-    Create all the content rows inside the table body,
-    remembering to make all the row headings into headings semantically.
-    Ensure all the content is placed into the right cells — in the raw data,
-    each row of planet data is shown next to its associated planet.
     Add attributes to make the row and column headers unambiguously associated with the rows,
     columns, or rowgroups that they act as headings for.
     Add a black border just around the column that contains all the planet name row headers.
 
 Hints and tips
 
-    The first cell of the header row needs to be blank, and span two columns.
     The group row headings (e.g. Jovian planets) that sit to the left of
     the planet name row headings (e.g. Saturn) are a little tricky to sort out — 
     you need to make sure each one spans the correct number of rows and columns.
