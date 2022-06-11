@@ -6,14 +6,17 @@
     <link href="minimal-table.css" rel="stylesheet" type="text/css">
   </head>
   <body>
-    <h1>Table template</h1>
-
+    <h1>Planets Data</h1>
     <table>
         <caption>Data about the planets of our solar system (Planetary facts taken from <a href="http://nssdc.gsfc.nasa.gov/planetary/factsheet/" target="_blank">Nasa's Planetary Fact Sheet - Metric</a>).</caption>
+        <colgroup>
+          <col span="2">
+          <col style="border: 2px solid black">
+          <col span="9">
+        </colgroup>
         <thead>
             <tr>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
+                <td colspan="2">&nbsp;</td>
                 <th id="name">Name</th>
                 <th id="mass">Mass (10<sup>24</sup>kg)</th>
                 <th id="diameter">Diameter (km)</th>
@@ -77,6 +80,57 @@
               <td headers="terrestrial mars notes">The red planet</td>
             </tr>
             <tr>
+              <th rowspan="4" id="jovian">Jovian Planets</th>
+              <th rowspan="2" id="gas" headers="jovian">Gas Giants</th>
+              <th id="jupiter" headers="jovian gas name">Jupiter</th>
+              <td headers="jovian gas jupiter mass">1898</td>
+              <td headers="jovian gas jupiter diameter">142,984</td>
+              <td headers="jovian gas jupiter density">1326</td>
+              <td headers="jovian gas jupiter gravity">23.1</td>
+              <td headers="jovian gas jupiter length">9.9</td>
+              <td headers="jovian gas jupiter distance">778.6</td>
+              <td headers="jovian gas jupiter temperature">-110</td>
+              <td headers="jovian gas jupiter moons">67</td>
+              <td headers="jovian gas jupiter notes">The largest planet</td>
+            </tr>
+            <tr>
+              <th id="saturn" headers="jovian gas name">Saturn</th>
+              <td headers="jovian gas saturn mass">568</td>
+              <td headers="jovian gas saturn diameter">120,536</td>
+              <td headers="jovian gas saturn density">687</td>
+              <td headers="jovian gas saturn gravity">9.0</td>
+              <td headers="jovian gas saturn length">10.7</td>
+              <td headers="jovian gas saturn distance">1433.5</td>
+              <td headers="jovian gas saturn temperature">-140</td>
+              <td headers="jovian gas saturn moons">62</td>
+              <td>&nbsp;</td>
+            </tr>
+            <tr>
+              <th rowspan="2" id="ice" headers="jovian">Ice Giants</th>
+              <th id="uranus" headers="jovian ice name">Uranus</th>
+              <td headers="jovian ice uranus mass">86.8</td>
+              <td headers="jovian ice uranus diameter">51,118</td>
+              <td headers="jovian ice uranus density">1271</td>
+              <td headers="jovian ice uranus gravity">8.7</td>
+              <td headers="jovian ice uranus length">17.2</td>
+              <td headers="jovian ice uranus distance">2872.5</td>
+              <td headers="jovian ice uranus temperature">-195</td>
+              <td headers="jovian ice uranus moons">27</td>
+              <td>&nbsp;</td>
+            </tr>
+            <tr>
+              <th id="neptune" headers="jovian ice name">Neptune</th>
+              <td headers="jovian ice neptune mass">102</td>
+              <td headers="jovian ice neptune diameter">49,528</td>
+              <td headers="jovian ice neptune density">1638</td>
+              <td headers="jovian ice neptune gravity">11.0</td>
+              <td headers="jovian ice neptune length">16.1</td>
+              <td headers="jovian ice neptune distance">4495.1</td>
+              <td headers="jovian ice neptune temperature">-200</td>
+              <td headers="jovian ice neptune moons">14</td>
+              <td>&nbsp;</td>
+            </tr>
+            <tr>
               <th colspan="2" id="dwarf">Dwarf planets</th>
               <th id="pluto" headers="dwarf name">Pluto</th>
               <td headers="dwarf pluto mass">0.0146</td>
@@ -91,18 +145,5 @@
             </tr>
         </tbody>
     </table>
-
-<!--
-    Add attributes to make the row and column headers unambiguously associated with the rows,
-    columns, or rowgroups that they act as headings for.
-    Add a black border just around the column that contains all the planet name row headers.
-
-Hints and tips
-
-    The group row headings (e.g. Jovian planets) that sit to the left of
-    the planet name row headings (e.g. Saturn) are a little tricky to sort out — 
-    you need to make sure each one spans the correct number of rows and columns.
-    One way of associating headers with their rows/columns is a lot easier than the other way.
--->
   </body>
 </html>
