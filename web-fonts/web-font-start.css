@@ -1,8 +1,25 @@
+/* Fonts From Font Squirrel */
+@font-face {
+    font-family: 'kaushan_scriptregular';
+    src: url('./fonts/kaushanscript-regular-webfont.woff2') format('woff2'),
+         url('./fonts/kaushanscript-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'open_sansregular';
+    src: url('./fonts/opensans-regular-webfont.woff2') format('woff2'),
+         url('./fonts/opensans-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 /* General setup */
 html {
     font-size: 10px;
     margin: 0;
-    font-family: sans-serif;
+    font-family: 'open_sansregular', sans-serif;
 }
 
 body {
@@ -18,6 +35,10 @@ h1 {
 
 h2 {
     font-size: 2.4rem;
+}
+
+h1, h2 {
+    font-family: 'kaushan_scriptregular', sans-serif;
 }
 
 p {
