@@ -66,12 +66,39 @@ header, footer {
 
 /* WRITE YOUR CODE BELOW HERE */
 
+
 /* Typography */
 
 html {
     font-family: 'abhaya_libreregular', sans-serif;
+    font-size: 10px;
+}
+
+body {
+    line-height: 1.5;
+    letter-spacing: 1px;
+    word-spacing: 2px;
 }
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'enriquetaregular', serif;
+    letter-spacing: 5px;
 }
+
+h1 {
+    font-size: 4em;
+    text-align: center;
+}
+
+h2 {
+    font-size: 3em;
+}
+
+section h2 + p {
+    text-indent: 20px;
+}
+
+/*
+
+
+*/
