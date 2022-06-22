@@ -94,11 +94,71 @@ h2 {
     font-size: 3em;
 }
 
+p, ul, ol {
+    font-size: 1.7em;
+}
+
 section h2 + p {
     text-indent: 20px;
 }
 
+
+/* Links */
+
+a {
+    text-decoration: underline;
+    outline: none;
+}
+
+a:link {
+    color: #702626;
+}
+
+a:visited {
+    color: #844545;
+}
+
+a:focus {
+    text-decoration: none;
+    color: #528852;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #3D6666;
+}
+
+a:active {
+    color: #528852;
+}
+
+a[href^="http"] {
+    background-image: url('./external-link-52.png');
+    background-repeat: no-repeat;
+    background-position: 100% 0;
+    background-size: 16px 16px;
+    padding-right: 19px;
+}
+
 /*
+Lists:
+
+    Make sure the spacing of your lists and list items works well with the styling of the overall page. 
+    Each list item should have the same line-height as a paragraph line, and each list should have 
+    the same spacing at its top and bottom as you have between paragraphs.
+    Give your list items a nice bullet appropriate for the design of the page. 
+    It is up to you whether you choose a custom bullet image or something else.
+
+Navigation menu:
+
+    Style your navigation menu so that it harmonizes with the page.
+
+Hints and tips
+
+    You don't need to edit the HTML in any way for this exercise.
+    You don't necessarily have to make the nav menu look like buttons,
+     but it needs to be a bit taller so that it doesn't look silly on the side of the page; 
+     also remember that you need to make this one a vertical nav menu.
 
 
 */
