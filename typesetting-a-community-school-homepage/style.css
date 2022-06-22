@@ -140,25 +140,27 @@ a[href^="http"] {
     padding-right: 19px;
 }
 
-/*
-Lists:
 
-    Make sure the spacing of your lists and list items works well with the styling of the overall page. 
-    Each list item should have the same line-height as a paragraph line, and each list should have 
-    the same spacing at its top and bottom as you have between paragraphs.
-    Give your list items a nice bullet appropriate for the design of the page. 
-    It is up to you whether you choose a custom bullet image or something else.
+/* Lists */
 
-Navigation menu:
-
-    Style your navigation menu so that it harmonizes with the page.
-
-Hints and tips
-
-    You don't need to edit the HTML in any way for this exercise.
-    You don't necessarily have to make the nav menu look like buttons,
-     but it needs to be a bit taller so that it doesn't look silly on the side of the page; 
-     also remember that you need to make this one a vertical nav menu.
+li {
+    list-style-type: square;
+}
 
 
-*/
+/* Navigation Menu */
+
+nav li {
+    list-style-type: none;
+    text-decoration: none;
+    text-align: center;
+    line-height: 75px;
+    border: 3px solid #844545;
+    border-radius: 5px;
+    height: 75px;
+    margin-bottom: 15px;
+}
+
+nav li a {
+    text-decoration: none;
+}
