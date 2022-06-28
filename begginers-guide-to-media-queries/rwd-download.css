@@ -84,4 +84,19 @@ main {
     nav ul {
         display: flex;
     }
+
+    main {
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+        margin-top: 15px;
+        gap: 20px;
+    }
+
+    article {
+        grid-column: 1 / 2;
+    }
+
+    aside {
+        grid-column: 2 / 3;
+    }
 }
