@@ -99,4 +99,10 @@ main {
     aside {
         grid-column: 2 / 3;
     }
+
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
 }
