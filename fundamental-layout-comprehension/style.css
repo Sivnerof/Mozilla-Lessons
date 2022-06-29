@@ -82,6 +82,10 @@ nav a {
     gap: 20px;
 }
 
-/*
-The photographs should display as a two column grid with a 1 pixel gap between the images.
-*/
+
+/* Photo Grid */
+.photos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1px;
+}
