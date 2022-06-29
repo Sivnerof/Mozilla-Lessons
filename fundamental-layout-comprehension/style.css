@@ -54,6 +54,7 @@ nav a {
 
 /* Your Code Below This Line */
 
+/* Navigation */
 nav {
     position: sticky;
     top: 0px;
@@ -68,10 +69,12 @@ nav a {
     display: block;
 }
 
-
+/* Article Image */
+.feature {
+    float: left;
+    margin-right: 20px;
+}
 /*
-The image that is inside the article should have text wrapped around it.
-    
     The <article> and <aside> elements should display as a two column layout.
     
     The columns should be a flexible size so that if the browser window shrinks smaller the columns become narrower.
