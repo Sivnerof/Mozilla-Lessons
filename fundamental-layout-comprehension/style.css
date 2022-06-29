@@ -48,15 +48,29 @@ nav a {
 }
 
 .feature {
-      width: 200px;
+    width: 200px;
 }
 
+
+/* Your Code Below This Line */
+
+nav {
+    position: sticky;
+    top: 0px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+nav a {
+    display: block;
+}
+
+
 /*
-    To display the navigation items in a row, with an equal amount of space between the items.
-    
-    The navigation bar should scroll with the content and then become stuck at the top of the viewport when it reaches it.
-    
-    The image that is inside the article should have text wrapped around it.
+The image that is inside the article should have text wrapped around it.
     
     The <article> and <aside> elements should display as a two column layout.
     
