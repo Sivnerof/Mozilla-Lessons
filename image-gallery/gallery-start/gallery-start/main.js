@@ -8,7 +8,7 @@ const overlay = document.querySelector('.overlay');
 const imageFileNames = ["pic1.jpg", "pic2.jpg", "pic3.jpg", "pic4.jpg", "pic5.jpg"];
 
 /* Looping through images */
-for (image of imageFileNames){
+for (const image of imageFileNames){
     const newImage = document.createElement('img');
     newImage.setAttribute('src', `./images/${image}`);
     thumbBar.appendChild(newImage);
@@ -16,17 +16,14 @@ for (image of imageFileNames){
 }
 
 /* Wiring up the Darken/Lighten button */
-
-
-/**
-    Checks the current class name set on the <button> — you can again achieve this by using getAttribute().
-    If the class name is "dark", changes the <button> class to "light" (using setAttribute()), its text content to "Lighten", and the background-color of the overlay <div> to "rgba(0,0,0,0.5)".
-    If the class name is not "dark", changes the <button> class to "dark", its text content back to "Darken", and the background-color of the overlay <div> to "rgba(0,0,0,0)".
-
-The following lines provide a basis for achieving the changes stipulated in points 2 and 3 above.
-
-btn.setAttribute('class', xxx);
-btn.textContent = xxx;
-overlay.style.backgroundColor = xxx;
-
- */
+btn.addEventListener('click', e => {
+    if (e.target.className === 'dark'){
+        btn.setAttribute('class', 'light');
+        btn.textContent = `Darken`;
+        overlay.style.backgroundColor = "rgba(0, 0, 0, 0)";
+    } else {
+        btn.setAttribute('class', 'dark');
+        btn.textContent = `Lighten`;
+        overlay.style.backgroundColor = "rgba(0, 0, 0, 0.5)";
+    }
+});
